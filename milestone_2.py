@@ -1,11 +1,7 @@
 import random
 
-word_list = ["Apple", "Kiwi", "Banana", "Watermelon", "Mango"]
-print(word_list)
-
-def random_word():
+def random_word(word_list):
     word = random.choice(word_list)
-    print(word)
     return word
 
 def ask_for_guess():

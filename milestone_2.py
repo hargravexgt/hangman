@@ -19,9 +19,3 @@ def check_guess(g):
     else:
         print("Oops! Your guess needs to be 1 letter")
         return False
-
-guess = ask_for_guess()
-result = check_guess(guess)
-print(result)
-
-

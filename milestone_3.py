@@ -15,7 +15,6 @@ def ask_for_input():
     result = None
     while True:
         if bool(result) == True:
-            print(result)
             break
         guess = milestone_2.ask_for_guess()
         result = milestone_2.check_valid_guess(guess)

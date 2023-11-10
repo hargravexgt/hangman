@@ -12,10 +12,11 @@ def ask_for_guess():
     guess = input("What's your guess?")
     return guess
 
-def check_guess(g):
+def check_valid_guess(g):
     if len(g) == 1 and g.isalpha() == True:
-        print("Good guess!")
+        print("Valid guess!")
         return True
     else:
         print("Oops! Your guess needs to be 1 letter")
         return False
+

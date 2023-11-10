@@ -19,8 +19,4 @@ def ask_for_input():
             break
         guess = milestone_2.ask_for_guess()
         result = milestone_2.check_valid_guess(guess)
-    check_in_word(guess)
-    return guess
 
-
-guess = ask_for_input()

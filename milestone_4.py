@@ -28,7 +28,6 @@ class Hangman:
 
     def ask_for_input(self):
         guess = milestone_3.ask_for_input()
-        print(f"Guess: {guess}, Word: {self.word}")
         if guess in self.list_of_guesses:
             print("You already tried that letter!")
         else:

@@ -1,11 +1,10 @@
-import random
-
 import milestone_2
 import milestone_3
 
 fruits  = ["Apple", "Kiwi", "Banana", "Watermelon", "Mango"]
 
 class Hangman:
+    """ This magic method initialises the attributes of Hangman objects"""
     def __init__(self, word_list, nl):
         self.word_list = word_list
         self.num_lives = nl
@@ -14,6 +13,11 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
+    """
+    This method checks whether a guess is present in the word - printing whether it is or not. 
+    If it is present, then it identifies the indices of where the guess is present, and
+    then replaces those spaces in the word_guessed attribute with the correctly guessed letter.
+    """
     def check_in_word(self, guess):
         guess = guess.lower()
         if guess in self.word.lower():
@@ -27,6 +31,11 @@ class Hangman:
             print(f"Sorry, {guess} not in the word. Try again!")
             print(f"You have {self.num_lives} left")
 
+    """ 
+    This method requests you to input your guess, notifies you whether your entry is valid or not, and if
+    it is then whether you have made that guess already or not. It is both valid and hasn't already been
+    guessed then it runs the check_in_word() method before adding the guess to the list of guesses.
+    """
 
     def ask_for_input(self):
         guess = milestone_3.ask_for_input()

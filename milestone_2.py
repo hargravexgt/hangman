@@ -1,14 +1,20 @@
 import random
 
 word_list = ['mango', 'pineapple', 'blueberry', 'orange', 'watermelon']
-print(word_list)
 
-word = random.choice(word_list)
-print(word)
+def get_random_word_from_list(list):
+    return random.choice(list)
 
-guess = input("Choose a letter:")
+word = get_random_word_from_list(word_list)
 
-if guess.isalpha() and len(guess)== 1:
-    print("Good guess!")
-else:
-    print("Oops that is not a valid input!")
+def check_if_guess_valid(guess):
+    if guess.isalpha() and len(guess)== 1:
+        print("Good guess!")
+    else:
+        print("Oops that is not a valid input!")
+
+if __name__ =="__main__":
+    print(word_list)
+    print(word)
+    guess = input("Choose a letter:")
+    check_if_guess_valid(guess)

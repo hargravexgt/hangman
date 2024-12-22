@@ -13,7 +13,7 @@ def check_if_guess_valid(guess):
     else:
         print("Oops that is not a valid input!")
 
-if __name__ =="__main__":
+if __name__ == "__main__":
     print(word_list)
     print(word)
     guess = input("Choose a letter:")

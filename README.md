@@ -23,7 +23,7 @@ Hangman AiCore Project
 
     ├── example                  #
     ├── example                  #      
-    ├── example                  # 
+    ├── milestone_4.py           # 
     ├── milestone_3.py           #  
     ├── milestone_2.py           #      
     ├── LICENSE                  #
